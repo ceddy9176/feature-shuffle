@@ -1,0 +1,88 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  background-color: lightgray;
+  /*overflow: hidden;*/
+  /*padding: 1vw;*/
+}
+.header{
+  width: 100vw;
+  height: 10vh;
+}
+.header-left{
+  width: 85%;
+  height: 50%;
+  background-color: black;
+}
+.middle{
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  margin-bottom: 3vh;
+
+}
+.content-area{
+  width: 100vw;
+  /*height: 60vh;*/
+}
+.content{
+  height: 20vh;
+}
+.content p {
+  font-size: 1.2em;
+}
+.content-image{
+  display: none;
+}
+@media (min-width: 601px) {
+  .header{
+    width: 100vw;
+    height: 10vh;
+  }
+  .header-left{
+    width: 65%;
+    height: 40%;
+    background-color: black;
+  }
+  .middle{
+    width: 100vw;
+    height: 8vh;
+    background-color: black;
+    margin-bottom: 3vh;
+  }
+  .content-image{
+    display: block;
+    width: 25vw;
+    height: 25vw;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    background-color: black;
+
+  }
+  .content:nth-child(even) .content-image{
+    float: right;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  .content h2{
+    margin: 0;
+  }
+  .content:nth-child(even) h2{
+    margin: auto;
+}
